@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: th.motive.georeferencing.gmap
+Bundle-SymbolicName: th.motive.georeferencing.gmap
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: th.motive.georeferencing.gmap
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=8))"
+Bundle-ClassPath: .
+Import-Package: de.bxservice.georeferencing.model,
+ de.bxservice.georeferencing.tools,
+ org.compiere.model,
+ org.compiere.util,
+ org.osgi.service.component.annotations;version="1.3.0";resolution:=optional
+Service-Component: OSGI-INF/th.motive.georeferencing.gmap.GmapProvider.xml
+Bundle-ActivationPolicy: lazy

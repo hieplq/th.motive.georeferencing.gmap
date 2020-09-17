@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="th.motive.georeferencing.gmap.GmapProvider">
+   <property name="helperType" type="String" value="th.motive.gmap"/>
+   <service>
+      <provide interface="de.bxservice.georeferencing.tools.IGeoreferencingHelper"/>
+   </service>
+   <implementation class="th.motive.georeferencing.gmap.GmapProvider"/>
+</scr:component>
